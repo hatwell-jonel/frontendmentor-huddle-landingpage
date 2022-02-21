@@ -1,0 +1,123 @@
+// RESETS
+*,
+*:before,
+*::after{
+  margin: 0px;
+  padding: 0px;
+  border: 1px;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 18px;
+  background-color: #f4f4f4;
+}
+
+body{
+  background-color: #fff;
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
+  box-shadow: 0px 0px 20px 0px hsla(0, 0%, 15%, 0.3);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+{
+  margin: 0;
+}
+
+p{
+  margin: 0;
+}
+
+ul{
+  list-style: none;
+  margin: 0;
+}
+
+button{
+  cursor: pointer;
+}
+
+img{
+  display:block;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+a{
+  display: inline-block;
+  text-decoration: none;
+  color: lightskyblue;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.container{
+  width:95%;
+  margin: 0 auto;
+
+  @include breakpoint(sm){
+    width:90%;
+  }
+
+  @include breakpoint(md){
+    width:80%;
+  }
+
+   @include breakpoint(lg){
+    width:75%;
+  }
+}
+
+// UTILITIES
+
+.btn-white{
+  border-radius: 40px;
+  background-color: #fff;
+  color: $very-dark-cyan;
+  box-shadow: 0px 3px 5px hsla(0, 0%, 15%, 0.514);
+  padding: .350rem 1rem;
+  font-family: $font-body;
+  font-weight: 600;
+  font-size: .8rem;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+
+  @include breakpoint(md){
+    padding: .5rem 2rem;
+  }
+
+  &:hover{
+    opacity: .850;
+  }
+}
+
+.btn-pink{
+  border-radius: 40px;
+  background-color: $pink;
+  color: #fff;
+  text-transform: capitalize;
+  padding: .5rem 1.3rem;
+  font-family: $font-body;
+  font-weight: 600;
+  box-shadow: 0px 3px 8px hsla(0, 0%, 15%, 0.3);
+  &:hover{
+    opacity: .850;
+  }
+}

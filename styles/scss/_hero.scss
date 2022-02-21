@@ -1,0 +1,81 @@
+.header{
+  padding: 1rem 0rem;
+  background:  $very-pale-cyan url(../../images/bg-hero-mobile.svg)  center/cover no-repeat;
+
+  @include breakpoint(md){
+    background:  $very-pale-cyan url(../../images/bg-hero-desktop.svg)  center/cover no-repeat;
+  }
+
+  .nav{
+    &-center{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .logo-container{
+        >img{
+          width: 150px;
+        }
+      }
+    }
+  }
+  .intro{
+    padding: 1rem 0rem;
+    &-center{
+      padding: 3rem 0rem;
+      display: grid;
+      grid-gap: .760rem;
+      grid-template-columns: 1fr;
+
+      @include breakpoint(md){
+        grid-template-columns: repeat(2,1fr);
+      }
+
+      @include breakpoint(lg){
+        grid-template-columns: 40% 60%;
+        grid-gap: 1rem;
+      }
+
+      .intro-text{
+        text-align: center;
+        
+        @include breakpoint(md){
+          text-align: left;
+          margin: auto 0;
+        }
+
+        &-title{
+          font-family: $font-heading;
+          color: $very-dark-cyan;
+        }
+        
+        &-desc{
+          font-family: $font-body;
+          font-weight: 400;
+          color: $very-dark-cyan;
+          margin: 2rem 0rem;
+
+          @include breakpoint(md){
+            margin: 1rem 0rem;
+          }
+        }
+
+        &-btn{
+          text-align: center;
+          width: 75%;
+          max-width: 300px;
+
+          @include breakpoint(md){
+            width: 90%;
+          }
+        }
+      }
+
+      .intro-img{
+        margin-top: 3rem;
+        @include breakpoint(md){
+          margin:auto;
+        }
+      }
+    }
+  } 
+}
