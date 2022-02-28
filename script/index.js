@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
   let item = items.map( (item) => {
     const {images, title, desc} = item;
     return `
-    <li class="item">
+    <article class="item">
       <div class="item-img">
         <img src=${images} alt=${title}>
       </div>
@@ -30,8 +30,9 @@ document.addEventListener('DOMContentLoaded', () => {
         <h2 class="title">${title}</h2>
         <p class="desc">${desc}</p>
       </div>
-    </li>
+    </article>
     `;
   })
+  item = item.join();
   listItems.innerHTML += item;
 })
