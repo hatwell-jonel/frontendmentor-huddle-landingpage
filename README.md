@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Click here](https://your-solution-url.com)
-- Live Site URL: [Click here](https://your-live-site-url.com)
+- Solution URL: [Click here](https://www.frontendmentor.io/solutions/html5-sass-javascript-responsive-design-gaace-2yZ#feedback)
+- Live Site URL: [Click here](https://hatwell-jonel.github.io/frontendmentor-huddle-landingpage/)
 
 ### Built with
 
